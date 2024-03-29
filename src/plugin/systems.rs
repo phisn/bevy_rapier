@@ -370,12 +370,14 @@ pub fn apply_rigid_body_user_changes(
                 ))
             });
 
+            /* 
             if transform_changed == Some(true) {
                 // Reset the interpolation so we don’t overwrite
                 // the user’s input.
                 interpolation.start = None;
                 interpolation.end = None;
             }
+            */
         }
 
         if let Some(rb) = context.bodies.get_mut(handle.0) {
