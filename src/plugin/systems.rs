@@ -546,7 +546,7 @@ pub fn writeback_rigid_bodies(
 ) {
     let context = &mut *context;
     let scale = context.physics_scale;
-    let lerp_percentage = fixed_time.overstep_percentage();
+    let lerp_percentage = fixed_time.overstep_fraction();
 
     if config.physics_pipeline_active {
         for (entity, parent, transform, mut interpolation, mut velocity, mut sleeping) in
